@@ -19,116 +19,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
 
+  <!-- CSS custom style -->
+  <link rel="stylesheet" href="style/style.css">
+
   <!-- LiveReload plugin -->
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-  <!---Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    :root {
-      /*## Colors */
-      /*### Primary */
-      --soft-blue: hsl(215, 51%, 70%);
-      --cyan: hsl(178, 100%, 50%);
-
-      /*### Neutral */
-      --very-dark-blue: hsl(217, 54%, 11%);
-      --very-dark-blue-card-bg: hsl(216, 50%, 16%);
-      --very-dark-blue-line: hsl(215, 32%, 27%);
-      --white: hsl(0, 0%, 100%);
-
-      /*## Typography */
-      /*### Body Copy */
-      --font-size-p: 18px;
-
-      /*### Font */
-      --font-outfit: 'Outfit', sans-serif;
-      --light:  300;
-      --regular:  400;
-      --semi-bold:  600;
-    }
-
-    .attribution { font-size: 11px; text-align: center; color: white; }
-    .attribution a { color: var(--cyan); }
-
-    body {
-      background-color: var(--very-dark-blue);
-    }
-
-    div.card {
-      background-color: var(--very-dark-blue-card-bg);
-      border-color: var(----very-dark-blue-line);
-    }
-
-    h1, p, span {
-      font-family: var(--font-outfit);
-    }
-
-    h1.card-title {
-      color: var(--white);
-      font-weight: var(--semi-bold);
-    }
-
-    a {
-      color: var(--white); 
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: var(--cyan);
-    }
-
-    p, span {
-      color: var(--soft-blue);
-      tab-size: 18px;
-      font-weight: var(--light);
-    }
-
-    .price {
-      font-weight: var(--regular);
-      color: var(--cyan);
-    }
-
-    img[alt="profile"] {
-      width: 30px;
-    }
-
-    .image-overlay {
-      position: relative;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: hsla(178, 100%, 50%, .5);
-    }
-
-    .image-overlay:hover .overlay {
-      opacity: 1;
-      cursor: pointer;
-    }
-
-    .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="container d-flex justify-content-center align-items-center vh-100" role='ntf preview card'>
-    <div class="card" style="width: 350px;">
+  <main class="container d-flex justify-content-center align-items-center vh-100">
+    <article class="card" style="width: 21.87rem;">
       <div class="image-overlay">
         <img src="images/image-equilibrium.jpg" alt="Equilibrium picture" class="card-img img-fluid vw-100">
         <div class="overlay">
@@ -146,12 +46,12 @@
           <img src="images/image-avatar.png" alt="profile" class="img-fluid border border-white rounded-circle me-3"><span>Creation of <a href="#">Jules Wyvern</a></span>
         </div>
       </div>
-    </div>
-  </div>
+    </article>
+  </main>
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/pleum3410">Wuttipon</a>.
-  </div>
+  </footer>
 </body>
 </html>
