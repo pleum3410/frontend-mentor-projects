@@ -28,7 +28,7 @@ body {
   background-color: var(--very-dark-blue);
 }
 
-div.card {
+article.card {
   background-color: var(--very-dark-blue-card-bg);
   border-color: var(----very-dark-blue-line);
 }
