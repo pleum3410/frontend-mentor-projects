@@ -13,8 +13,8 @@
 
   <!-- bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <!-- liveRelove plugin -->
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
@@ -27,14 +27,13 @@
 <body>
 
   <main>
-    <div class="container d-flex justify-content-center vh-100 align-items-center my-3">
-      <article class="card" style="width: 600px;">
+    <section class="container d-flex justify-content-center vh-100 align-items-center my-3">
+      <article class="card mx-3" style="width: 37.5rem;">
         <div class="row no-gutters">
           <div class="col-sm-12 col-lg-6">
             <picture>
-                <source media="(max-width: 100vw)">
-                <img src="images/image-product-desktop.jpg" alt="image product" class="card-img d-none d-lg-inline img-fluid image">
-                <img src="images/image-product-mobile.jpg" alt="image product" class="card-img d-inline d-lg-none img-fluid image">
+                <source media="(max-width: 61.8em)" srcset="./images/image-product-mobile.jpg">
+                <img src="images/image-product-desktop.jpg" alt="image product" class="card-img img-fluid image">
             </picture>
           </div>
           <div class="col-sm-12 col-lg-6 pe-4 pt-4">
@@ -53,15 +52,13 @@
             </div>
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </section>
   </main>
   
-  <footer>
-    <div class="attribution container">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/pleum3410">Wuttipon</a>.
-    </div>
+  <footer class="attribution container">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/pleum3410">Wuttipon</a>.
   </footer>
 </body>
 </html>
