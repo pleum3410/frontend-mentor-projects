@@ -8,6 +8,9 @@
   
   <title>Frontend Mentor | Product preview card component</title>
 
+  <!-- CSS custom style -->
+  <link rel="stylesheet" href="css/style.css">
+
   <!-- bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -20,128 +23,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
-
-  <style>
-    :root {
-      /*## Colors
-      ### Primary*/
-      --dark-cyan: hsl(158, 36%, 37%);
-      --cream: hsl(30, 38%, 92%);
-
-      /*### Neutral*/
-      --very-dark-blue: hsl(212, 21%, 14%);
-      --dark-grayish-blue: hsl(228, 12%, 48%);
-      --white: hsl(0, 0%, 100%);
-
-      /*## Typography
-      ### Body Copy*/
-      --font-size: 14px;
-
-      /*### Font*/
-      --family-Montserrat: 'Montserrat', sans-serif;
-      --family-Fraunces: 'Fraunces', serif;
-
-    }
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    body {
-      background-color: var(--cream);
-    }
-
-    .button {
-      background-color: var(--dark-cyan);
-      border-color: var(--dark-cyan);
-      color: var(--white);
-    }
-
-    .button:hover {
-      background-color: var(--very-dark-blue) !important;
-      border-color: var(--very-dark-blue) !important;
-      color: var(--white) !important;
-    }
-
-    .new-price {
-      color: var(--dark-cyan);
-    }
-
-    .title {
-      color: var(--very-dark-blue);
-      font-family: var(--family-Fraunces);
-      line-height: 2.3rem;
-    }
-
-    .subtitle, .text, .old-price {
-      color: var(--dark-grayish-blue);
-      font-size: var(--font-size);
-      font-family: var(--family-Montserrat);
-    }
-
-    .new-price {
-      font-family: var(--family-Fraunces); 
-    }
-
-    .subtitle {
-      letter-spacing: .4rem;
-      font-size: 0.7rem;
-    }
-
-    .image {
-      border-radius: 10px 0 0 10px;
-    }
-
-    .card {
-      border-radius: 10px;
-    }
-
-    /* Smartphones (portrait and landscape) ----------- */
-    @media only screen 
-    and (min-device-width : 320px) 
-    and (max-device-width : 480px) {
-      .image {
-        border-radius: 10px 10px 0 0;
-      }
-      .title {
-        font-size: 2.5rem !important;
-      }
-      .new-price {
-        font-size: 2rem !important; 
-      }
-    }
-  </style>
 </head>
 <body>
 
-  <div class="container d-flex justify-content-center vh-100 align-items-center my-3">
-    <div class="card" style="width: 600px;">
-      <div class="row no-gutters">
-        <div class="col-sm-12 col-lg-6">
-          <img src="images/image-product-desktop.jpg" alt="image product" class="card-img d-none d-lg-inline img-fluid image">
-          <img src="images/image-product-mobile.jpg" alt="image product" class="card-img d-inline d-lg-none img-fluid image" style="max-width: 100vw;">
-        </div>
-        <div class="col-sm-12 col-lg-6 pe-4 pt-4">
-          <div class="card-body">
-            <p class="card-subtitle subtitle text-uppercase">Preview</p>
-            <h1 class="card-title title my-3 fs-1">Gabrielle Essence Eau De Parfum</h1>
-            <p class="card-text text">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-            Perfumer-Creator for the House of CHANEL.</p>
+  <main>
+    <div class="container d-flex justify-content-center vh-100 align-items-center my-3">
+      <article class="card" style="width: 600px;">
+        <div class="row no-gutters">
+          <div class="col-sm-12 col-lg-6">
+            <picture>
+                <source media="(max-width: 100vw)">
+                <img src="images/image-product-desktop.jpg" alt="image product" class="card-img d-none d-lg-inline img-fluid image">
+                <img src="images/image-product-mobile.jpg" alt="image product" class="card-img d-inline d-lg-none img-fluid image">
+            </picture>
+          </div>
+          <div class="col-sm-12 col-lg-6 pe-4 pt-4">
+            <div class="card-body">
+              <p class="card-subtitle subtitle text-uppercase">Preview</p>
+              <h1 class="card-title title my-3 fs-1">Gabrielle Essence Eau De Parfum</h1>
+              <p class="card-text text">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+              Perfumer-Creator for the House of CHANEL.</p>
 
-            <div class="d-flex align-items-center">
-              <span class="new-price fs-2">$149.99</span>
-              <span class="old-price ms-4"><small><s>$169.99</s></small></span>
+              <div class="d-flex align-items-center">
+                <span class="new-price fs-2">$149.99</span>
+                <span class="old-price ms-4"><small><s>$169.99</s></small></span>
+              </div>
+
+              <button class="btn btn-primary d-block my-3 w-100 py-2 button" style="font-family: var(--family-Montserrat);">Add to Cart</button>   
             </div>
-
-            <button class="btn btn-primary d-block my-3 w-100 py-2 button" style="font-family: var(--family-Montserrat);">Add to Cart</button>   
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </article>
+  </main>
   
-  <div class="attribution container">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/pleum3410">Wuttipon</a>.
-  </div>
+  <footer>
+    <div class="attribution container">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/pleum3410">Wuttipon</a>.
+    </div>
+  </footer>
 </body>
 </html>

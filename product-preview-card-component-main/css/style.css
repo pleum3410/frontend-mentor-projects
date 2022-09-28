@@ -1,0 +1,85 @@
+:root {
+  /*## Colors
+  ### Primary*/
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /*### Neutral*/
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  /*## Typography
+  ### Body Copy*/
+  --font-size: .85rem;
+
+  /*### Font*/
+  --family-Montserrat: 'Montserrat', sans-serif;
+  --family-Fraunces: 'Fraunces', serif;
+
+}
+
+.attribution { font-size: .7rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  background-color: var(--cream) !important;
+}
+
+.button {
+  background-color: var(--dark-cyan) !important;
+  border-color: var(--dark-cyan) !important;
+  color: var(--white) !important;
+}
+
+.button:hover {
+  background-color: var(--very-dark-blue) !important;
+  border-color: var(--very-dark-blue) !important;
+  color: var(--white) !important;
+}
+
+.new-price {
+  color: var(--dark-cyan);
+}
+
+.title {
+  color: var(--very-dark-blue);
+  font-family: var(--family-Fraunces);
+  line-height: 2.3rem;
+}
+
+.subtitle, .text, .old-price {
+  color: var(--dark-grayish-blue);
+  font-size: var(--font-size);
+  font-family: var(--family-Montserrat);
+}
+
+.new-price {
+  font-family: var(--family-Fraunces); 
+}
+
+.subtitle {
+  letter-spacing: .4rem;
+  font-size: 0.7rem;
+}
+
+.image {
+  border-radius: .6rem 0 0 .6rem !important;
+}
+
+.card {
+  border-radius: .6rem !important;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 61.8em) {
+  .image {
+    border-radius: .6rem .6rem 0 0 !important;
+  }
+  .title {
+    font-size: 2.5rem !important;
+  }
+  .new-price {
+    font-size: 2rem !important; 
+  }
+}
