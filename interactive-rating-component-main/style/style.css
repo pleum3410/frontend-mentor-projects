@@ -13,10 +13,81 @@
 
   /*## Typography*/
   /*### Body Copy*/
-  --font-size-p: 15px;
+  --font-size-p: .94rem;
 
   /*### Font*/
   --font-Overpass: 'Overpass', sans-serif;
   --regular: 400;
   --bold: 700;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+article {
+  background-color: var(--dark-blue);
+  padding: 1.25rem;
+}
+
+p, span {
+  font-family: var(--font-Overpass);
+  font-weight: var(--regular);
+  font-size: .94rem;
+  color: var(--medium-grey);
+}
+
+h1, h2 {
+  font-family: var(--font-Overpass);
+  font-weight: var(--bold);
+  font-size: 1.7rem; 
+  color: var(--white);
+}
+
+.rating {
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+button {
+  color: var(--white) !important;
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+}
+
+button:hover {
+  color: var(--orange) !important;
+  background-color: var(--white) !important;
+  border-color: var(--white) !important;
+}
+
+label {
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: .5rem !important;
+  font-family: var(--font-Overpass);
+  font-weight: var(--regular);
+  font-size: 1rem; 
+  color: var(--medium-grey) !important; 
+  background-color: var(--dark-grey) !important;
+}
+
+label:hover {
+  background-color: var(--light-grey) !important; 
+  color: var(--white) !important;
+}
+
+input[type="radio"]:checked+label {
+  background-color: var(--orange) !important; 
+  color: var(--white) !important; 
+}
+
+span {
+  color: var(--orange);
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+#state {
+  transition: opacity .5s;
 }
