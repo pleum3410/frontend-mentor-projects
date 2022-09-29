@@ -25,7 +25,7 @@
 
 body {
   background-image: url('../images/pattern-background-desktop.svg');
-  background-size: 100vw 50vh;
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: var(--pale-blue);
 }
@@ -101,6 +101,9 @@ article {
 @media only screen and (max-device-width : 30em) {
   body {
     background-image: url('../images/pattern-background-mobile.svg');
-    background-size: 100vw 33vh;
   }  
+
+  article {
+    margin: 0 .5rem 0 .5rem;
+  }
 }
