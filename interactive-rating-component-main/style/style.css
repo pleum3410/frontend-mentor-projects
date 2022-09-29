@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;
 }
 
-article {
+article, #state {
   background-color: var(--dark-blue);
   padding: 1.25rem;
 }

@@ -36,15 +36,15 @@
       to help us improve our offering!</p>
 
       <div class="w-100 d-flex justify-content-around rating">
-        <input type="radio" class="btn-check" name="options" id="one-outlined" autocomplete="off" value="1">
+        <input type="radio" class="btn-check" name="options" id="one-outlined" value="1">
         <label class="btn btn-primary rounded-circle border-0 shadow-none" for="one-outlined">1</label>
-        <input type="radio" class="btn-check" name="options" id="two-outlined" autocomplete="off" value="2">
+        <input type="radio" class="btn-check" name="options" id="two-outlined" value="2">
         <label class="btn btn-primary rounded-circle border-0 shadow-none" for="two-outlined">2</label>
-        <input type="radio" class="btn-check" name="options" id="three-outlined" autocomplete="off" value="3">
+        <input type="radio" class="btn-check" name="options" id="three-outlined" value="3">
         <label class="btn btn-primary rounded-circle border-0 shadow-none" for="three-outlined">3</label>
-        <input type="radio" class="btn-check" name="options" id="four-outlined" autocomplete="off" value="4">
+        <input type="radio" class="btn-check" name="options" id="four-outlined" value="4">
         <label class="btn btn-primary rounded-circle border-0 shadow-none" for="four-outlined">4</label>
-        <input type="radio" class="btn-check" name="options" id="five-outlined" autocomplete="off" value="5">
+        <input type="radio" class="btn-check" name="options" id="five-outlined" value="5">
         <label class="btn btn-primary rounded-circle border-0 shadow-none" for="five-outlined">5</label>
       </div>
 
@@ -55,7 +55,7 @@
 
   <!-- Thank you state start -->
 
-  <article class="vw-100 vh-100 position-absolute fixed-top fixed-bottom opacity-0 invisible" id='state' onclick="disableState()">
+  <div role="dialog" aria-labelledby="dialogState" aria-describedby="ThankyouState" class="vw-100 vh-100 position-absolute fixed-top fixed-bottom opacity-0 invisible" id='state' onclick="disableState()">
     <section class="container d-flex flex-column justify-content-center align-items-center text-center h-100" style="width: 23rem;">
       <img src="images/illustration-thank-you.svg" alt="Thank you illustration" style="width: 8rem; height: auto;">
       <span>You selected <span id="rating"></span> out of 5</span>
@@ -65,7 +65,7 @@
       <p>We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!</p>
     </section>
-  </article>
+  </div>
 
   <!-- Thank you state end -->
 
