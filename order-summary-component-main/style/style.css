@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  /*## Colors*/
+  /*### Primary*/
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /*### Neutral*/
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /*## Typography*/
+  /*### Body Copy*/
+  --font-size-p: 1rem;
+
+  /*### Font*/
+
+  --font-family: 'Red Hat Display', sans-serif;
+  --medium: 500;
+  --bold: 700;
+  --dark: 900;
+}
+
+body {
+  background-image: url('../images/pattern-background-desktop.svg');
+  background-size: 100vw 50vh;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+
+img[alt="illustration image"] {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-family: var(--font-family);
+  font-weight: var(--dark);
+}
+
+p, .plan-price {
+  color: var(--desaturated-blue);
+  font-family: var(--font-family);
+  font-weight: var(--medium);
+  font-size: var(--font-size-p);
+}
+
+.plan {
+  background-color: var(--very-pale-blue); 
+}
+
+.plan-text, .change-plan {
+  color: var(--dark-blue);
+  font-family: var(--font-family);
+  font-weight: var(--bold);
+}
+
+.change-plan {
+  color: var(--bright-blue);
+  font-size: .9rem;
+}
+
+.change-plan:hover {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+}
+
+.btn-payment, .btn-cancel {
+  font-family: var(--font-family);
+  font-weight: var(--bold);
+  font-size: .8rem;
+}
+
+.btn-payment {
+  background-color: var(--bright-blue) !important; 
+  border-color: var(--bright-blue) !important;
+  box-shadow: 0rem 1rem 1rem hsla(245, 75%, 52%,.2) !important;
+}
+
+.btn-payment:hover {
+  opacity: .8;
+}
+
+.btn-cancel {
+  color: var(--desaturated-blue) !important;
+}
+
+.btn-cancel:hover {
+  color: var(--dark-blue) !important;
+  background-color: var(--white) !important;
+}
+
+article {
+  box-shadow: 0rem 1rem 1rem hsla(223, 47%, 23%,.1);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 30em) {
+  body {
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-size: 100vw 33vh;
+  }  
+}
