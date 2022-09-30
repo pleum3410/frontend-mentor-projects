@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  /* Colors*/
+  /*# Primary*/
+ --Bright-orange: hsl(31, 77%, 52%);
+ --Dark-cyan: hsl(184, 100%, 22%);
+ --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /*# Neutral*/
+ --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+ --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+  /* Typography*/
+  /*# Body Copy*/
+  --Font-size: 1rem;
+
+  /*# Font*/
+  --lexend-deca-font: 'Lexend Deca', sans-serif;
+  --big-shoulders-display-font: 'Big Shoulders Display', cursive;
+  --regular: 400;
+  --bold: 700;
+}
+
+body {
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  overflow-x: hidden;
+}
+
+img {
+  width: 4rem !important;
+  margin-left: 1rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-top: .9rem;
+  margin-bottom: 1rem !important;
+}
+
+h1 {
+  font-family: var(--big-shoulders-display-font);
+  font-weight: var(--bold);
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+
+a {
+  font-family: var(--big-shoulders-display-font);
+  font-weight: var(--bold);
+  background-color: var(--Very-light-gray-background-headings-buttons) !important;
+  border-color: var(--Very-light-gray-background-headings-buttons) !important;
+  margin-top: 3.5rem;
+  border-radius: 50px !important;
+}
+
+div.card-group .card:first-child a:hover,
+div.card-group .card:nth-child(2) a:hover,
+div.card-group .card:last-child a:hover {
+  background-color: transparent !important;
+  color: var(--Very-light-gray-background-headings-buttons) !important; 
+}
+
+p {
+  font-family: var(--lexend-deca-font);
+  font-weight: var(--regular);
+  color: var(--Transparent-white-paragraphs) !important;
+  font-size: var(--Font-size);
+}
+
+/*card background color*/
+div.card-group .card:first-child {
+  background-color: var(--Bright-orange);
+}
+
+div.card-group .card:nth-child(2) {
+  background-color: var(--Dark-cyan);
+}
+
+div.card-group .card:last-child {
+  background-color: var(--Very-dark-cyan);
+}
+/*------------*/
+
+/*link button text color*/
+div.card-group .card:first-child a {
+  color: var(--Bright-orange) !important;
+}
+
+div.card-group .card:nth-child(2) a {
+  color: var(--Dark-cyan) !important;
+}
+
+div.card-group .card:last-child a {
+  color: var(--Very-dark-cyan) !important;
+}
+/*------------*/
+
+div.card-group, article.card {
+  border: none;
+}
+
+div.card-footer {
+  border: none;
+  background-color: transparent;
+}
+
+article.card {
+  padding: 2rem;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 36rem) {
+  article.card {
+    margin: 0 !important;
+    border-radius: 0;
+  }
+}
