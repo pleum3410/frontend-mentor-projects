@@ -24,6 +24,8 @@
   --bold:  700;
 }
 
+
+
 body {
   background-color: var(--very-dark-blue-main-background);
   overflow-x: hidden;
@@ -51,7 +53,7 @@ picture img {
   left: 0;
 }
 
-h1.card-title {
+h2.card-title {
   color: var(--white-main-heading-and-stats);
   font-family: var(--inter-font);
   font-weight: var(--bold);
@@ -104,6 +106,10 @@ span+p {
     text-align: center;
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  h2.card-title {
+    margin-top: 2rem;
   }
 
   p.card-text {
