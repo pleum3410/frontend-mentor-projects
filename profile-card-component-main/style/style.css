@@ -28,13 +28,13 @@ body {
 .first-bubble {
   top: 0%;
   left: 0%;
-  transform: translate(-50%, -50%);
+  transform: translate(-40%, -50%);
 }
 
 .secound-bubble {
   bottom: 0%;
   right: 0%;
-  transform: translate(50%, 50%);
+  transform: translate(25%, 70%);
 }
 
 .card {
@@ -87,4 +87,15 @@ div.ranks-info span {
 
 div.ranks-info p {
   letter-spacing: .15rem;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 80rem) {
+  .first-bubble {
+    transform: translate(-75%, -50%);
+  }
+
+  .secound-bubble {
+    transform: translate(75%, 50%);
+  }
 }
