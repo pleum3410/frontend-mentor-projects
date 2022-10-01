@@ -127,3 +127,38 @@ p {
   transform: translate(-50%, -28%);
   width: 12rem;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 48em) {
+  .card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .decor-img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    object-fit: unset;
+    object-position: unset;
+    transform: translate(-50%, -53%);
+    width: 15rem;
+  }
+
+  .decor-bg-img {
+    background-image: url('../images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 15rem;
+    min-height: 10rem;
+  }
+
+  .card-body {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  h1 {
+    margin-bottom: 2rem !important;
+  }
+}
