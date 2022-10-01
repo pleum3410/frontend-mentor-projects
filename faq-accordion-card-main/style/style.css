@@ -32,6 +32,7 @@
 }
 
 *{
+  /*for debug*/
   /*box-shadow:inset 0px 0px 0px 1px green;*/
   font-family: var(--Kumbh-sans-font);
 }
@@ -75,6 +76,7 @@ p {
   font-size: var(--Font-size);
 }
 
+/*remove defult background and text color of accordion*/
 .accordion-button:not(:focus), .accordion-button:focus {
   background-color: white !important;
   color: var(--Very-dark-desaturated-blue) !important;
@@ -85,11 +87,13 @@ p {
   padding-bottom: .75rem;
 }
 
+/*change arrow icon of accordion*/
 .accordion-button:not(.collapsed)::after, .accordion-button.collapsed::after {
   background-image: url('../images/icon-arrow-down.svg');
   background-size: .7rem;
 }
 
+/*move arrow icon*/
 .accordion-button.collapsed::after {
   transform: translateX(50%);
 }
@@ -98,6 +102,7 @@ p {
   border-color: var(--Light-grayish-blue) !important;
 }
 
+/*remove outline focus of accodion (this one is work)*/
 .accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus  {
   box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
 }
@@ -108,6 +113,7 @@ p {
   padding-bottom: 0;
 }
 
+/*use object-fit to clip out the overflow image*/
 .decor-img {
   width: 100%;
   height: 100%;
@@ -115,6 +121,7 @@ p {
   object-position: -5rem 4rem;
 }
 
+/*cropping image in background*/
 .decor-bg-img {
   background-image: url('../images/bg-pattern-desktop.svg');
   background-repeat: no-repeat;
