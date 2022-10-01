@@ -68,9 +68,6 @@ p {
   font-weight: var(--regular);
 }
 
-.accordion-button:hover {
-  color: var(--Soft-red) !important;
-}
 .accordion-button {
   font-weight: var(--regular);
   font-size: var(--Font-size);
@@ -105,6 +102,10 @@ p {
 /*remove outline focus of accodion (this one is work)*/
 .accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus  {
   box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+}
+
+.accordion-button:hover {
+  color: var(--Soft-red) !important;
 }
 
 .accordion-body {
