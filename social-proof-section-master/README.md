@@ -37,7 +37,7 @@ Users should be able to:
 
 ### What I learned
 
-This project help me to practice html css and bootstrap by building profile card component
+This project help me to practice html css and bootstrap layout
 
 ### Useful resources
 
