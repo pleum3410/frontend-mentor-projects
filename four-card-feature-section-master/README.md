@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Github](https://pleum3410.github.io/four-card-feature-section-master/)
+- Live Site URL: [Github](https://pleum3410.github.io/frontend-mentor-projects/four-card-feature-section-master/)
 
 ## My process
 
