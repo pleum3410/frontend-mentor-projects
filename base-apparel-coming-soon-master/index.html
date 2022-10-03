@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!---Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
+
+  <!-- CSS custom style -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- LiveReload plugin -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: .7rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="row vw-100 min-vh-100 m-0">
+    <div class="col-12 col-md-7 order-2 order-md-1">
+      <header class="container-fluid d-none d-md-block">
+        <img src="images/logo.svg" alt="logo">
+      </header>
+      <article class="container-fluid">
+        <h1><em>We're</em> coming soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form>
+          <input type="email" name="email" placeholder="Email Address" required id="input">
+          <label class="position-relative">
+            <input type="submit" name="submit" value=""> 
+            <img src="images/icon-arrow.svg" alt="" aria-hidden="true" class="position-absolute">
+            <img src="images/icon-error.svg" alt="" aria-hidden="true" class="position-absolute d-none" id="icon" >
+          </label>
+          <p class="text-danger d-none" id="text">
+            Please provide a valid email
+          </p>
+        </form>
+      </article>
+    </div>
+    <div class="col-12 col-md-5 p-0 order-1 order-md-2">
+      <header class="container-fluid d-block d-md-none">
+        <img src="images/logo.svg" alt="logo">
+      </header>
+      <picture class="float-right">
+        <source srcset="images/hero-mobile.jpg" media="(max-width: 48em)">
+        <img src="images/hero-desktop.jpg" alt="" aria-hidden="true" class="img-fluid h-100 w-100">
+      </picture>
+    </div>
+  </main>
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/pleum3410">Wuttipon</a>.
+    </p>
+  </footer> -->
+
+  <script>
+    $('[type="submit"]').on('click', function () {
+        let input = document.getElementById('input')
+        // this adds 'required' class to all the required inputs under the same <form> as the submit button
+        if (!input.checkValidity()) {
+          $(this).closest('form').find('[required]').addClass('required');
+          $(this).closest('form').find('#icon').removeClass('d-none');
+          $(this).closest('form').find('#text').removeClass('d-none');
+        }
+    });
+  </script>
+</body>
+</html>
