@@ -65,7 +65,7 @@ h1+h2+p {
   margin-bottom: 4rem;
 }
 
-.card h1 {
+.card h2 {
   font-weight: var(--semi-bold);
   font-size: 1.2rem;
 }
