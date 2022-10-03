@@ -126,7 +126,7 @@ article div.container-fluid {
   justify-content: end;
 }
 
-@media screen and (max-width: 24em) {
+@media screen and (max-width: 48em) {
   main>article {
     margin-top: 0rem;
   }
