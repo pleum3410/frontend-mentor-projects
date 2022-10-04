@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  /*## Colors*/
+  /*### Primary*/
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /*### Accent*/
+  --Blue: hsl(248, 32%, 49%);
+
+  /*### Neutral*/
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+
+  /*## Typography*/
+  /*### Body Copy*/
+  --Font-Size: 1rem;
+
+  /*### Font*/
+  --Poppins: 'Poppins', sans-serif;
+  --Regular: 400;
+  --Medium: 500;
+  --Semi-Bold: 600;
+  --Bold: 700;
+}
+
+.text-red { color: var(--Red); } .bg-red { background-color: var(--Red); } .border-red { border: 1px solid var(--Red); }
+.bg-green { background-color: var(--Green); } .hover-green:hover { background-color: hsla(154, 59%, 51%, .8) !important; } .shadow-green { box-shadow: 0 .3rem 0rem .1rem hsla(154, 59%, 25%,.5); }
+.bg-blue { background-color: var(--Blue); }
+.text-dark-blue { color: var(--Dark-Blue); } .border-dark-blue { border: 1px solid var(--Dark-Blue); } .bg-dark-blue { background-color: var(--Dark-Blue); }
+.text-grayish-blue { color: var(--Grayish-Blue); } .border-grayish-blue { border: 1px solid var(--Grayish-Blue); }
+.fs-body { font-size: var(--Font-Size); }
+.fs-header { font-size: 3rem; }
+.ff-default { font-family: var(--Poppins); }
+.fw-regular { font-weight: var(--Regular); }
+.fw-medium { font-weight: var(--Medium); }
+.fw-semi-bold { font-weight: var(--Semi-Bold); }
+.fw-bold { font-weight: var(--Bold); }
+
+.px-6 { padding-left: 9rem; padding-right: 9rem; }
+.fs-6 { font-size: .75rem !important; }
+.p-6 { padding: 2.5rem; }
+.sharp-shadow { box-shadow: 0 .4rem 0rem .1rem rgba(0, 0, 0, .2); }
+
+
+main {
+  background-image: url('../images/bg-intro-desktop.png');
+}
+
+.cta {
+  transform: translateY(25%);
+}
+
+::placeholder {
+  font-family: var(--Poppins);
+  font-weight: var(--Medium);
+  font-size: var(--Font-Size);
+  color: var(--Dark-Blue) !important;  
+}
+
+input {
+  padding: 1rem 2rem !important;  
+}
+
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border-color: var(--Dark-Blue);
+}
+
+@media screen and (max-width: 48em) {
+  .px-r-2 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  h1 {
+    margin-top: 9rem;
+    font-size: 1.5rem !important;
+  }
+
+  h1+p {
+    margin-bottom: 5rem;
+  }
+}
