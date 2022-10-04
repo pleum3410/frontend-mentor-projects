@@ -16,7 +16,7 @@
   /*--Weights: 400*/
 }
 
-.bg-violet { background-color: var(--Violet); }
+.bg-violet { background-color: var(--Violet); } .text-violet {color: var(--Violet);}
 .hover-soft-magenta:hover { background-color: var(--Soft-Magenta) !important; } .text-soft-magenta {color: var(--Soft-Magenta);}
 .f-open-sans { font-family: var(--Open-sans); }
 .f-poppins { font-family: var(--Poppins); }
@@ -41,12 +41,12 @@ main {
 }
 
 svg {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50px;
   border: 1px solid white;
-  padding: .3rem;
-  margin-right: .8rem;
+  padding: .5rem;
+  margin-right: 1rem;
 }
 
 button {
