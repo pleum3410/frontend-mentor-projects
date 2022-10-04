@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+  /* Colors*/
+  /*# Primary*/
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /*# Neutral*/
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+
+  /* Typography*/
+  /*# Body Copy*/
+  --Font-Size: 1rem;
+
+  /*# Font*/
+  --Karla-Font: 'Karla', sans-serif;
+  --Regular: 400;
+  --Bold: 700;
+}
+
+.bg-light-gray { background-color: var(--Light-Gray) !important; } .text-light-gray { color: var(--Light-Gray) !important; }
+.bg-grayish-blue { background-color: var(--Grayish-Blue) !important; } .text-grayish-blue { color: var(--Grayish-Blue) !important; } .shadow-grayish-blue { box-shadow: 0 2rem 2rem hsla(218, 22%, 67%,.3) !important; }
+.bg-cyan { background-color: var(--Cyan) !important; } .text-cyan { color: var(--Cyan) !important; } .hover-cyan:hover { background: var(--Cyan) !important; }
+.bg-bright-yellow { background-color: var(--Bright-Yellow) !important; } .text-bright-yellow { color: var(--Bright-Yellow) !important; }
+.bg-cyan-darker { background-color: hsl(179, 62%, 40%) !important; } .text-cyan-darker { color: hsl(179, 62%, 40%) !important; }
+
+* {
+  font-family: var(--Karla-Font);
+  /*box-shadow: 0 0 5px green;*/
+}
+
+h1, h2 {
+  font-weight: var(--Bold);
+}
+
+p, span, li {
+  font-weight: var(--Regular);
+  font-size: var(--Font-Size);
+}
