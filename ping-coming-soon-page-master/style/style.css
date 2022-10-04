@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root {
+  /* Colors*/
+  /*# Primary*/
+  --Blue: hsl(223, 87%, 63%);
+
+  /*# Secondary*/
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  /*# Neutral*/
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+
+  /* Typography*/
+  /*# Body Copy*/
+  --Font-Size: 1.25rem;
+
+  /*# Fonts*/
+  --Libre-Franklin: 'Libre Franklin', sans-serif;
+  --Light: 300;
+  --Semi-Bold: 600;
+  --Bold: 700;
+
+}
+
+.text-very-dark-blue { color: var(--Very-Dark-Blue); }
+.text-light-red { color: var(--Light-Red); }
+.text-gray { color: var(--Gray); }
+.bg-blue { background-color: var(--Blue); } .shadow-blue { box-shadow: 0 .5rem 1rem hsla(223, 87%, 63%,.2); }
+.hover-pale-blue:hover { background-color: var(--Pale-Blue); } .border-pale-blue { border-color: var(--Pale-Blue) !important; }
+.fs-body { font-size: var(--Font-Size); }
+.ff-default { font-family: var(--Libre-Franklin); }
+.fw-light { font-weight: var(--Light); }
+.fw-semi-bold { font-weight: var(--Semi-Bold); }
+.fw-bold { font-weight: var(--Bold); }
+.fs-header { font-size: 2.5rem; }
+
+.mb-6 { margin-bottom: 6rem; }
+
+::placeholder {
+  color: var(--Pale-Blue) !important;
+}
+
+* {
+  /*box-shadow: 0 0 2px black;*/
+}
+
+
+svg {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50px;
+  border: 1px solid var(--Pale-Blue);
+  padding: .5rem;
+  fill: hsl(223, 87%, 63%);
+  margin-left: .3rem;
+}
+
+svg:hover {
+  cursor: pointer;
+  border-color: var(--Blue);
+  background-color: var(--Blue);
+  fill: white;
+}
+
+input {
+  width: 70%;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+button {
+  width: 30%;
+  height: 3rem;
+}
+
+.invalid-feedback {
+  top: 100%;
+  left: 5%;
+}
+
+form.was-validated input {
+  border-color: var(--Light-Red) !important;
+}
+
+@media screen and (max-width: 48em) {
+  header {
+    margin-top: 4rem !important;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h1+p {
+    font-size: 1rem !important;
+  }
+
+  form {
+    flex-direction: column;
+    width: 80% !important;
+  }
+
+  form * {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  div>img {
+    width: 80%;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+  }
+
+  .invalid-feedback {
+    top: -20%;
+    left: 10%;
+  }
+}
