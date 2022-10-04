@@ -84,6 +84,10 @@ form.was-validated input {
   border-color: var(--Light-Red) !important;
 }
 
+form, picture>img {
+  width: 40%;
+}
+
 @media screen and (max-width: 48em) {
   header {
     margin-top: 4rem !important;
@@ -107,7 +111,7 @@ form.was-validated input {
     margin-bottom: 1rem;
   }
 
-  div>img {
+  picture>img {
     width: 80%;
     margin-top: -3rem;
     margin-bottom: 3rem;
