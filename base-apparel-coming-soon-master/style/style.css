@@ -127,6 +127,7 @@ form input[type='submit'] {
   box-shadow: 0 .5rem 1rem hsla(0, 36%, 70%,.5);
   transform: translateX(-60%);
   background: var(--Dark-Gradient);
+  color: transparent;
 }
 
 form input[type='email']:focus {
