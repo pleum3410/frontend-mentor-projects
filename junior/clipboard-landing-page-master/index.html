@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Clipboard landing page</title>
+
+  <!---Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
+
+  <!-- CSS custom style -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- LiveReload plugin -->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="ff-default fw-regular fs-body text-grayish-blue">
+  <header class="vw-100 min-vh-100 d-flex flex-column justify-content-center align-content-center text-center px-6">
+    <div class="mb-5">
+      <img src="images/logo.svg" alt="company logo" class="img-fluid mb-4">
+    </div>
+    <section>
+      <h1 class="fw-semi-bold fs-header text-dark-grayish-blue">A history of everything you copy</h1>
+
+      <p class="my-3 mb-md-5">Clipboard allows you to track and organize everything you 
+      copy. Instantly access your clipboard on all your devices.</p>
+
+      <a href="#" class="d-block d-md-inline btn border-0 bg-strong-cyan rounded-pill text-white py-6 hover-strong-cyan btn-shadow-strong-cyan mt-5 me-md-2 px-md-4">Download for iOS</a>
+
+      <a href="#" class="d-block d-md-inline btn border-0 bg-light-blue rounded-pill text-white py-6 my-6 hover-light-blue btn-shadow-light-blue ms-md-2 px-md-4">Download for Mac</a>
+    </section>
+  </header>
+  <main>
+    <section>
+      <h2>Keep track of your snippets</h2>
+
+      <p>Clipboard instantly stores any item you copy in the cloud, 
+      meaning you can access your snippets immediately on all your 
+      devices. Our Mac and iOS apps will help you organize everything.</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/image-computer.png" alt="sample program" class="img-fluid dip-left">
+        </div>
+        <div class="col-md-6 text-md-start d-flex flex-column justify-content-center">
+          <h3>Quick Search</h3>
+
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+
+          <h3>iCloud Sync</h3>
+
+          <p>Instantly saves and syncs snippets across all your devices.</p>
+
+          <h3>Complete History</h3>
+
+          <p>Retrieve any snippets from the first moment you started using the app.</p>  
+        </div>
+      </div>
+    </section>  
+    <section class="mt-md-6">
+      <h2>Access Clipboard anywhere</h2>
+
+      <p>Whether you’re on the go, or at your computer, you can access all your Clipboard 
+      snippets in a few simple clicks. </p> 
+
+      <img src="images/image-devices.png" alt="sample image" class="img-fluid">
+    </section>
+    <section class="workflow px-md-6">
+      <h2>Supercharge your workflow</h2>
+
+      <p>We’ve got the tools to boost your productivity.</p>
+
+      <div class="row feature align-top">
+        <div class="col-md-4">
+          <img src="images/icon-blacklist.svg" alt="" aria-hidden="true">
+          <h3>Create blacklists</h3>
+
+          <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/icon-text.svg" alt="" aria-hidden="true">
+          <h3>Plain text snippets</h3>
+
+          <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/icon-preview.svg" alt="" aria-hidden="true">
+          <h3>Sneak preview</h3>
+
+          <p>Quick preview of all snippets on your Clipboard for easy access. </p>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex flex-md-row justify-content-md-around my-md-6">
+      <img src="images/logo-google.png" alt="" aria-hidden="true">
+      <img src="images/logo-ibm.png" alt="" aria-hidden="true">
+      <img src="images/logo-microsoft.png" alt="" aria-hidden="true">
+      <img src="images/logo-hp.png" alt="" aria-hidden="true">
+      <img src="images/logo-vector-graphics.png" alt="" aria-hidden="true">
+    </section>
+    <section>
+      <h1 class="fw-semi-bold fs-header text-dark-grayish-blue">Clipboard for iOS and Mac OS</h1>
+
+      <p class="my-3">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+
+      <div class="w-100 px-2 my-5">
+        <a href="#" class="d-block d-md-inline btn border-0 bg-strong-cyan rounded-pill text-white py-6 hover-strong-cyan btn-shadow-strong-cyan mt-5 me-md-2 px-md-4">Download for iOS</a>
+
+        <a href="#" class="d-block d-md-inline btn border-0 bg-light-blue rounded-pill text-white py-6 my-6 hover-light-blue btn-shadow-light-blue ms-md-2 px-md-4">Download for Mac</a>
+      </div>
+    </section>
+  </main>
+  <footer class="row text-center py-5 text-dark-grayish-blue mw-100 mx-0">
+    <div class="col-md-9 d-flex flex-column flex-md-row">
+      <div class="">
+        <img src="images/logo.svg" alt="company logo" class="img-fluid mb-4">
+      </div>
+      <div class="">
+        <ul>
+          <li>FAQs</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="">
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Press Kit</li>
+        </ul>
+      </div>
+      <div class="">
+        <ul>
+          <li>Install Guide</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3 d-flex justify-content-center mt-3">
+      <img src="images/icon-facebook.svg" alt="" aria-hidden="true">
+      <img src="images/icon-twitter.svg" alt="" aria-hidden="true">
+      <img src="images/icon-instagram.svg" alt="" aria-hidden="true">
+    </div>
+  </footer>
+
+  
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/pleum3410">Wuttipon</a>.
+    </p>
+  </footer> -->
+</body>
+</html>
