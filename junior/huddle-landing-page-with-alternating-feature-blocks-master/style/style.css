@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+:root {
+  /*## Colors*/
+  /*### Primary*/
+  --pink: hsl(322, 100%, 66%);
+
+  /*### Neutral*/
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+
+  /*## Typography*/
+  /*### Body Copy*/
+  --font-size: 18px;
+
+  /*### Headings*/
+  --poppins-font: 'Poppins', sans-serif;
+
+  /*### Body, Call-to-actions*/
+  --open-sans-font: 'Open Sans', sans-serif;
+
+  /*font weight*/
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+}
+
+* {
+  max-width: 100% !important;
+}
+
+/*
+* {
+  color: white;
+  background-color: deepskyblue;
+  outline: 1px solid slategray;
+}
+
+body, div, section, article, header, footer, main, figure, html {
+  background-color: skyblue !important;
+  outline: 1px solid white;
+}
+*/
+
+html { font-size: 10px; } /* turn rem value to 10px per 1rem*/
+
+body {
+  font-size: var(--font-size);
+}
+
+header, main, footer {
+  padding: 8rem;
+}
+
+header a, .grid-box, .cta-box, .cta-box a {
+  box-shadow: 0rem .5rem 1rem hsla(192, 100%, 9%, .1);
+}
+
+header {
+  background-color: var(--very-pale-cyan);
+  background-image: url(../images/bg-hero-desktop.svg);
+}
+
+footer {
+  color: white;
+  background-color: var(--very-dark-cyan);
+  position: relative;
+}
+
+h1, h2 {
+  font-family: var(--poppins-font);
+  font-weight: var(--semi-bold);
+  color: var(--very-dark-cyan);
+}
+
+h1 {
+  font-size: 4.6rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+p {
+  font-family: var(--open-sans-font);
+  font-weight: var(--regular);
+}
+
+h1+p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+h2+p {
+  margin-top: 2.5rem;
+  color: var(--grayish-blue);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--open-sans-font);
+  font-weight: var(--bold);
+  font-size: 1.4rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav figure img {
+  width: 20rem;
+}
+
+header a {
+  padding: 1rem;
+  border-radius: 50px;
+  padding: 1.5rem 4rem;
+}
+
+header nav a {
+  color: var(--very-dark-cyan);
+  background-color: white;
+}
+
+header nav a:hover {
+  color: hsla(192, 100%, 9%, .5);
+}
+
+header>div {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  align-items: center;
+}
+
+header>div section {
+  order: 1;
+}
+
+header>div figure {
+  order: 2;
+  padding: 3rem;
+}
+
+header>div section a, .cta-box a {
+  color: var(--very-pale-cyan);
+  background-color: var(--pink);
+}
+
+header>div section a:hover, .cta-box a:hover {
+  color: var(--very-pale-cyan);
+  background-color: hsla(322, 100%, 66%, .5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  margin-top: 4rem;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem hsla(192, 100%, 9%, .1);
+}
+
+.grid-box section {
+  padding: 7rem;
+  margin-left: 4rem;
+}
+
+.grid-box figure {
+  padding: 7rem;
+  text-align: right;
+  border-top-right-radius: 1rem;
+}
+
+.grid-box figure img {
+  width: 40rem;
+}
+
+.grid-box.grid-reverse section {
+  order: 2;
+  margin-left: 0rem;
+}
+
+.grid-box.grid-reverse figure {
+  order: 1;
+  text-align: left;
+  border-top-left-radius: 1rem;
+}
+
+section.cta-box {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  padding: 10rem;
+  border-radius: 1rem;
+  transform: translateY(50%);
+  background-color: white;
+  box-shadow: 0 0 1rem hsla(192, 100%, 9%, .1);
+  position: relative;
+  z-index: 1;
+}
+
+section.cta-box h2 {
+  margin-bottom: 5rem;
+  font-size: 2.7rem;
+}
+
+section.cta-box a {
+  padding: 2rem 8rem;
+  border-radius: 50rem;
+  color: white;
+}
+
+footer {
+  padding-top: 25rem;
+  display: grid;
+  grid-template-columns: 1.5fr .7fr .7fr 1.1fr;
+  min-height: 70rem;
+  color: var(--very-pale-cyan);
+}
+
+footer address ul {
+  list-style-type: none;
+  margin-top: 4rem;
+}
+
+footer ul li {
+  margin-bottom: 2.5rem;
+  margin-left: 1rem;
+}
+
+footer ul li a{
+  color: var(--very-pale-cyan);
+  font-weight: var(--regular);
+}
+
+footer ul li a:hover {
+  color: var(--very-pale-cyan);
+}
+
+footer address ul li p {
+  padding-left: 1rem;
+  padding-right: 5rem;
+}
+
+footer div:nth-child(2) ul, footer div:nth-child(3) ul {
+  list-style-type: none;
+  margin-top: 8rem;
+}
+
+footer div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+footer address img {
+  background-color: transparent;
+  filter: brightness(0) invert(1);
+}
+
+footer .social{
+  margin-top: 8rem;
+  display: flex;
+}
+
+footer .social img {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: 1rem;
+  border-radius: 50px;
+  padding: .5rem;
+  background-color: transparent;
+  border: 1px solid #000;
+  filter:  invert(1);
+}
+
+@media screen and (max-width: 46em) {
+  header {
+    background-image: url(../images/bg-hero-mobile.svg);
+  }
+
+  header>div {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  header nav figure img {
+    width: 10rem;
+  }
+
+  header a {
+    border-radius: 50px;
+    padding: .5rem 1.5rem !important;
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  header>div a {
+    padding: 1rem 20% !important;
+  }
+
+  header>div figure {
+    margin-top: 6rem;
+    padding: 0rem;
+  }
+
+  header, main, footer {
+    padding: 2rem;
+  }
+
+  .grid-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .grid-box section {
+    order: 2;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-left: 0;
+  }
+
+  .grid-box figure {
+    order: 1;
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  section.cta-box {
+    width: 90%;
+    padding: 4rem 2rem;
+  }
+
+  section.cta-box h2 {
+    font-size: 1.75rem;
+  }
+
+  section.cta-box a {
+    padding: 1.3rem 6rem;
+    border-radius: 50rem;
+    color: white;
+  }
+
+  footer {
+    padding-top: 15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  footer address ul {
+    margin-top: 4rem;
+  }
+
+  footer ul li {
+    margin-bottom: 2rem;
+  }
+
+  footer address ul li p {
+    padding-right: 1rem;
+  }
+
+  footer div:nth-child(2) ul {
+    margin-top: 4rem;
+  }
+
+  footer div:nth-child(3) ul {
+    margin-top: -0rem;
+  }
+
+  footer div:last-child {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  footer .social{
+    margin-top: 0rem;
+    justify-content: center;
+  }
+
+  footer div p:first-child {
+    margin-top: 2rem !important;
+  }
+}
