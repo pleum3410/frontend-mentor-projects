@@ -91,7 +91,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
 }
 
 p, span {
@@ -161,4 +161,57 @@ footer address+div form {
   height: 1.5rem;
   filter: invert(1);
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 48em) {
+  header .logo {
+    width: 10rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 6rem;
+    letter-spacing: 0;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h1+p {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .icon {
+    transform: translateX(-150%);
+  }
+
+  .cta {
+    padding: 1rem 3rem;
+  }
+
+  .number span{
+    font-size: 3rem;
+  }
+
+  .number p {
+    font-size: 1rem;
+  }
+
+  footer address {
+    padding-right: 0rem !important;
+  }
+
+  footer address+div p {
+    padding-right: 0rem !important; 
+  }
+
+  footer address+div form {
+    padding-right: 0rem !important; 
+  }
+
 }
